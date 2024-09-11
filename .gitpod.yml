@@ -4,7 +4,11 @@ tasks:
   - name: utils
     before: |
       sudo apt-get install tree
+#Link to install powershell on aws
+#https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up-linux-mac.html
 
+#Link to install powershell
+#https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.4
   - name: powershell
     before: |  
       sudo apt-get update
@@ -15,6 +19,10 @@ tasks:
       rm packages-microsoft-prod.deb
       sudo apt-get update
       sudo apt-get install -y powershell
+
+      # To start powershell: pwsh 
+      # To install powershell for aws: Install-Module -Name AWS.Tools.Installer
+
   - name: aws-cli
     env: 
       AWS_CLI_AUTO_PROMPT: on-partial
