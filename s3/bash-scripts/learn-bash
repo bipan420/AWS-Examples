@@ -1,0 +1,57 @@
+#!/bin/bash
+#printing hello world
+echo "Hello, world!"
+
+chmod +x learn-bash
+
+#Variables in Bash
+greeting="Hello"
+name="Bipan"
+
+echo "$greeting, $name!"
+
+#User Input
+# echo "Enter your name:"
+# read name
+# echo "Hello, $name!"
+
+#Conditional Statements
+echo "Enter a number:"
+read number
+
+if [ "$number" -gt 10 ]; then
+    echo "The number is greater than 10"
+else
+    echo "The number is less than or equal to 10"
+fi
+
+
+name="Alice"
+
+if [ "$name" = "Alice" ]; then
+    echo "Hello, Alice!"
+else 
+    echo "You are not Alice."
+fi
+
+
+#Common conditions:
+# -eq: equal to, -ne: not equal to, -lt: less than, -le: less than or equal to
+#-gt: greater than, -ge: greater than or equal to
+
+#String comparisions:
+# = : equal, != : not equal, -z: string is null, -n: string is not null
+
+#Checking odd or even
+# if [ $((number % 2)) -eq 0]; then
+
+#loops in Bash
+for i in {1..5}; do
+    echo "Looping ... number $i"
+done
+
+#Practice loop: write a loop that prints the squares of numbers from 1 to 5
+
+for i in {1..5}; do
+    echo "$((i * i))"
+done
