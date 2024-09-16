@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+#bundle init - to create this file
+#bundle install - to install the contents that exists in this file
+source "https://rubygems.org"
+
+gem 'aws-sdk-s3'
+gem 'pry'
+gem 'nokogiri'
+
