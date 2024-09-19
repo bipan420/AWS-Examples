@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: A sample CloudFormation template with YAML comments.
+Resources:
+#https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    # We don't need to specify a bucket name as aws will generate a random name for us.
