@@ -14,3 +14,11 @@ BUCKET_NAME=$1
 aws s3api list-objects-v2 \
 --bucket $BUCKET_NAME 
 
+
+#list contents of the specific bucket
+#aws s3 ls s3://bucket-name
+#aws s3 ls s3://terraform-20240926145139957900000001
+
+#download and print the content of the file in terminal:
+#aws s3 cp s3://bucket-name/file_name - && cat -
+#aws s3 cp s3://terraform-20240926145139957900000001/myfile.txt - && cat -
