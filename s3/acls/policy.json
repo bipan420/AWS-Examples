@@ -1,0 +1,24 @@
+{
+    "Grants": [
+      {
+        "Grantee": {
+          "Type": "CanonicalUser",
+          "ID": "USER_CANONICAL_ID",
+          "DisplayName": "USERNAME"
+        },
+        "Permission": "FULL_CONTROL"
+      },
+      {
+        "Grantee": {
+          "Type": "Group",
+          "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+        },
+        "Permission": "READ"
+      }
+    ],
+    "Owner": {
+      "ID": "BUCKET_OWNER_CANONICAL_ID",
+      "DisplayName": "BUCKET_OWNER_NAME"
+    }
+  }
+  
