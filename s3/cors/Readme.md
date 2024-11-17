@@ -61,6 +61,11 @@ aws s3api put-bucket-website --bucket my-cors2-experiment-5857 --website-configu
 aws s3api put-object --bucket my-cors2-experiment-5857 --key hello.js --body hello.js --content-type text/js
 ```
 
+## Create API Gateway with mock response and then test the endpoint
+```sh
+curl -X POST -H "Content-Type: application/json" https://rv8xqoj945.execute-api.us-east-1.amazonaws.com/prod/hello
+```
+
 ## View the js file 
 ```sh
 https://my-cors2-experiment-5857.s3.us-east-1.amazonaws.com/hello.js
